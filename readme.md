@@ -28,14 +28,11 @@ Let's test this out by reverting back to the first commit:
 
 git reset 89f6c3d --hard
 
-
-
 How to Revert to a Previous Commit Using the git revert Command
 I have already initialized the project and made three commits like we did in the last section. Here's what the commit log looks like:
 
 commit-log
 git log --oneline
-
 
 To revert to the to the previous commit, run the git revert command along with the commit ID of the current commit.
 
