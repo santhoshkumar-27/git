@@ -55,3 +55,15 @@ $ git log --oneline README.md
 In a situation where the file is located in another folder, you can either navigate your terminal to the folder or use the file path in the command as seen below:
 
 $ git log --oneline src/App.js
+
+## How to Revert a File to a Previous Commit
+
+So now that you know how to get the SHA code, you can use the git checkout command to revert your file to any commit you want by also passing the file name or file path:
+
+$ git checkout da9cc5f -- README.md
+
+Or
+
+$ git checkout 55a1dff -- src/App.js
+
+Just make sure you want to revert a file before doing so, because you will discard your current local changes to the file. Git will replace the file with the specified committed version. Use this only if you are sure and don’t want those unsaved local changes.
