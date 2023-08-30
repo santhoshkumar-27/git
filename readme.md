@@ -15,3 +15,15 @@ b08fc26 fix: second commit
 To go back to the second commit, you run the git reset command followed by the commit ID. That is:
 
 git reset b08fc26
+
+But when we run the git log --oneline command, the third commit wont't be in the log of commits:
+
+git log --oneline
+
+We've successfully gone back to a previous commit.
+
+If you want to undo a commit and the all the changes made after that commit, you attach the --hard flag to your git reset command.
+
+Let's test this out by reverting back to the first commit:
+
+git reset 89f6c3d --hard
