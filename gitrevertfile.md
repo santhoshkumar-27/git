@@ -67,3 +67,7 @@ Or
 $ git checkout 55a1dff -- src/App.js
 
 Just make sure you want to revert a file before doing so, because you will discard your current local changes to the file. Git will replace the file with the specified committed version. Use this only if you are sure and don’t want those unsaved local changes.
+
+works fine
+
+ git checkout cf779b6 init.txt
